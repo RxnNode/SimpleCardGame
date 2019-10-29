@@ -24,17 +24,15 @@ public class PlayCard extends DeckofCard {
             input = new Scanner(System.in);
             try{
                 command = input.nextLine();
-                if (!input.hasNextInt()){
-                    System.err.println("Please enter number only!");
-                }else if (command.isEmpty()){
-                    System.err.println("Please enter number of players.");
-                }
-
             } catch (NoSuchElementException e){
                 System.err.println();
                 break;
             }
-
+            if (!input.hasNextInt()){
+                System.err.println("Please enter number only!");
+            }else if (command.isEmpty()){
+                System.err.println("Please enter number of players.");
+            }
         }
 
     }
