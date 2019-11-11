@@ -37,13 +37,16 @@ public class PlayCard extends DeckofCard {
             playNum = Integer.valueOf(command);
             break;
         }
+        for (int i = 0; i < 52; ++i){
+            System.out.println(Deck.get(i).getSuit()+" "+Deck.get(i).getRank());
+        }
 
         //Who win
         //int[] randCard = new int[playNum];
         //ArrayList<Integer> randCard = new ArrayList<Integer>();
         System.out.println("Rule : ♠ > ♥ > ♦ > ♣");
         for (int i = 0; i < playNum; ++i){
-            System.out.println("Player No." + (i+1) +", your card :"+ Deck.get(i).getSuits() + ", "+ Deck.get(i).getRanks());
+            //System.out.println("Player No." + (i+1) +", your card :"+ Deck.get(i).getSuits() + ", "+ Deck.get(i).getRanks());
             Card bigestcard = new Card();
 
         }
