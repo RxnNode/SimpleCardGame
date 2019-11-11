@@ -58,5 +58,5 @@ public class Card {
     public CardRank getRank() {
         return rank;
     }
-  
+
 }
