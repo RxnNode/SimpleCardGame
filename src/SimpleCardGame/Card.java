@@ -6,11 +6,9 @@ enum CardSuit {
     Diamonds(1),
     Hearts(2),
     Spades(3);
-
+    
     private final int vSuit;
-    public int getvSuit() {
-        return vSuit;
-    }
+    public int getvSuit() { return vSuit; }
     CardSuit (int vSuit){
         this.vSuit = vSuit;
     }
