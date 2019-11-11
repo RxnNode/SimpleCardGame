@@ -6,8 +6,6 @@ public class DeckofCard {
 
 
     public static void NewDeck(ArrayList<Card> deck) {
-        //String[] suits = {"Spades", "Hearts", "Clubs", "Diamonds"};
-        //String[] ranks = {"A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"};
         for (CardSuit suit : CardSuit.values()){
             for (CardRank rank : CardRank.values()) {
                 Card card = new Card(suit,rank);
